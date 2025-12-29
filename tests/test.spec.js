@@ -10,7 +10,7 @@ test.describe('Basic Website Tests', () => {
     await page.goto('https://example.com');
     const heading = page.locator('h1');
     await expect(heading).toBeVisible();
-    await expect(heading).toContainText('Example Domain');
+    await expect(heading).toContainText('Example Domain SHOULD FAIL');
   });
 
   test('should have a clickable link', async ({ page }) => {
