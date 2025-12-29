@@ -20,8 +20,6 @@ export default defineConfig({
     video: "retain-on-failure",
     trace: 'on-first-retry',
   },
-  testMatch:["**.test.js"],
-  retries: 0,
 
   /* Configure projects for major browsers */
   projects: [
