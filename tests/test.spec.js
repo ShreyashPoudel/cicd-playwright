@@ -1,4 +1,4 @@
-import { test, expect } from '@playwright/test';
+const { test, expect } = require('@playwright/test');
 
 test.describe('Basic Website Tests', () => {
   test('should load homepage successfully', async ({ page }) => {
@@ -10,7 +10,7 @@ test.describe('Basic Website Tests', () => {
     await page.goto('https://example.com');
     const heading = page.locator('h1');
     await expect(heading).toBeVisible();
-    await expect(heading).toContainText('Eshreyahs pouadkjnsakjc');
+    await expect(heading).toContainText('Example Domain');
   });
 
   test('should have a clickable link', async ({ page }) => {
