@@ -17,6 +17,6 @@ test.describe('Basic Website Tests', () => {
     await page.goto('https://example.com');
     const link = page.locator('a');
     await expect(link).toBeVisible();
-    await expect(link).toHaveAttribute('href', 'https://www.iana.org/domains/example');
+    await expect(link).toHaveAttribute('href', 'https://iana.org/domains/example');
   });
 });
